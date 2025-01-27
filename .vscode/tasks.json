@@ -6,11 +6,14 @@
 			"label": "C/C++: g++.exe build active file",
 			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
 			"args": [
+			
 				"-fdiagnostics-color=always",
 				"-g",
 				 "${workspaceFolder}/src/*.cpp", // Compile all source files
 				"-o",
-				"${workspaceFolder}/bin/output.exe" // Output executable
+				"${workspaceFolder}/bin/output.exe", // Output executable
+				"-I",
+				"${workspaceFolder}/include" // Include directory
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"

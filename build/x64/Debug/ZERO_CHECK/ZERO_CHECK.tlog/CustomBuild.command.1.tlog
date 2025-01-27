@@ -1,0 +1,10 @@
+^C:\USERS\OTSOR\ONEDRIVE\DESKTOP\STRESSTEST\BUILD\CMAKEFILES\A8EA38AFB7E163D0861E718CDA0DEA17\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/otsor/OneDrive/Desktop/StressTest -BC:/Users/otsor/OneDrive/Desktop/StressTest/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/otsor/OneDrive/Desktop/StressTest/build/StressTest.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
